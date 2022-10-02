@@ -1,0 +1,5 @@
+D:\ASSESSMENTS\ACERPRO\MVC5App\MVC5App\MVC5App.Core\bin\Debug\MVC5App.Core.dll
+D:\ASSESSMENTS\ACERPRO\MVC5App\MVC5App\MVC5App.Core\bin\Debug\MVC5App.Core.pdb
+D:\ASSESSMENTS\ACERPRO\MVC5App\MVC5App\MVC5App.Core\obj\Debug\MVC5App.Core.csproj.CoreCompileInputs.cache
+D:\ASSESSMENTS\ACERPRO\MVC5App\MVC5App\MVC5App.Core\obj\Debug\MVC5App.Core.dll
+D:\ASSESSMENTS\ACERPRO\MVC5App\MVC5App\MVC5App.Core\obj\Debug\MVC5App.Core.pdb

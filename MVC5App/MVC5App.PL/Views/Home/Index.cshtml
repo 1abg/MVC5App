@@ -1,0 +1,27 @@
+﻿@model MVC5App.Core.DTOs.Concrete.CountryAddDto
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-3">
+            @Html.DropDownListFor(m => m.Name, new List<SelectListItem>
+                               { new SelectListItem{Text="Male", Value="M"},
+                                 new SelectListItem{Text="Female", Value="F"}}, "Please select")
+        </div>
+        <div class="col-md-3">
+            @Html.TextBoxFor(m => m.CapitalCity)
+        </div>
+        <div class="col-md-3">
+            @Html.TextBoxFor(m => m.ShortCode)
+        </div>
+        <div class="col-md-3">
+            @Html.TextBoxFor(m => m.Currency)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 col-sm-offset-9"><input type="submit" value="Submit" /></div>
+    </div>
+</div>

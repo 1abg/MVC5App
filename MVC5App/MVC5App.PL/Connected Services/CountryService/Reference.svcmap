@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f33a63bb-4e46-42a0-a5f7-e99aaba49ed4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/MVC5App.BLL/Service1/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="d2109238-6542-4b87-85a1-89fc49c6b7a3" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MVC5App.BLL/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="b0b113f6-1d13-411b-b34b-202f7e3d04fc" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MVC5App.BLL/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="f8c2db49-df60-4710-ad61-4b522982ad9f" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MVC5App.BLL/Service1/mex" />
+    <MetadataFile FileName="MVC5App.Core.DTOs.Concrete.xsd" MetadataType="Schema" ID="92ab67d9-633b-4792-b345-fec764455949" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/MVC5App.BLL/Service1/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

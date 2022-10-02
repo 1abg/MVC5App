@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/MVC5App.Core.DTOs.Concrete" />
+  <xs:element name="GetListOfCountryNamesByCode">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListOfCountryNamesByCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/MVC5App.Core.DTOs.Concrete" minOccurs="0" name="GetListOfCountryNamesByCodeResult" nillable="true" type="q1:ArrayOfCountryListDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddCountry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/MVC5App.Core.DTOs.Concrete" minOccurs="0" name="countryAddDto" nillable="true" type="q2:CountryAddDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddCountryResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCountryInfoByName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCountryInfoByNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/MVC5App.Core.DTOs.Concrete" minOccurs="0" name="GetCountryInfoByNameResult" nillable="true" type="q3:CountryInfoByServiceDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
