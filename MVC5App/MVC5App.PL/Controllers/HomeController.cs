@@ -1,4 +1,5 @@
 ﻿using MVC5App.Core.DTOs.Concrete;
+using Newtonsoft.Json;
 using System.Web.Mvc;
 
 namespace MVC5App.PL.Controllers
@@ -13,19 +14,22 @@ namespace MVC5App.PL.Controllers
 
         public ActionResult Index()
         {
-            ViewBag.Countries = _client.GetListOfCountryNamesByCode(); ;
+            ViewBag.Countries = _client.GetListOfCountryNamesByCode(); 
             return View();
         }
 
-
-        public CountryInfoByServiceDto GetCountryInfoByName(string name)
-        {
-            return _client.GetCountryInfoByName(name);
-        }
-
-        public void SaveCountry(CountryAddDto countryAddDto)
+        [HttpPost]
+        public ActionResult Index(CountryAddDto countryAddDto)
         {
             _client.AddCountry(countryAddDto);
+            return RedirectToAction("Index", "Home");
+        }
+
+        [HttpGet]
+        public string GetCountryInfoByName(string name)
+        {
+            var res = _client.GetCountryInfoByName(name);
+            return JsonConvert.SerializeObject(res);
         }
     }
 }

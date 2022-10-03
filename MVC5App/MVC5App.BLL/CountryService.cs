@@ -46,11 +46,6 @@ namespace MVC5App.BLL
 
         public List<CountryListDto> GetListOfCountryNamesByCode()
         {
-            //var client =
-            //     new CountryInfoServiceSoapTypeClient(new BasicHttpBinding { MaxReceivedMessageSize = 9000000 },
-            //                                          new EndpointAddress(
-            //                                              "http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso"));
-
             var countries = _client.ListOfCountryNamesByCode().ToList();
             return _mapper.Map<List<tCountryCodeAndName>, List<CountryListDto>>(countries);
         }
@@ -71,18 +66,12 @@ namespace MVC5App.BLL
         }
 
 
-        
-
         public void AddCountry(CountryAddDto countryAddDto)
         {
             var country = _mapper.Map<CountryAddDto, CountryInfo>(countryAddDto);
             _unitOfWork.countryInfoDal.Add(country);
             _unitOfWork.Commit();
         }
-
-
-
-
 
     }
 }
